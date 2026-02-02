@@ -10,7 +10,7 @@ export default function Team() {
       initials: "RA",
       color: "from-cyan-500 to-blue-600",
       bio: "Specializes in developing cutting-edge AI solutions with expertise in machine learning, deep learning, and natural language processing. Leads our AI initiatives and ensures our solutions are at the forefront of technology.",
-      expertise: ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "AI Integration", "Neural Networks", "Data Science"],
+      expertise: ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "AI Integration", "Neural Networks", "Data Science", "Product Strategy", "Roadmapping", "Agile Methodology"],
       social: {
         linkedin: "#",
         github: "#",
@@ -111,10 +111,34 @@ export default function Team() {
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-3xl font-bold text-white mb-3">{member.name}</h2>
-                    <div className="flex items-center mb-4">
+                    <div className="flex flex-wrap items-center gap-3 mb-4">
+                      {/* Primary Role Badge */}
                       <span className="inline-flex items-center px-4 py-2 rounded-full text-base font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
-                        <i className="fas fa-user-tie mr-3 text-lg"></i>{member.role}
+                        <i className="fas fa-user-tie mr-3 text-lg"></i>
+                        {member.role}
                       </span>
+
+                      {/* Additional Roles - Rami has Product Manager and Founder */}
+                      {member.id === 1 && (
+                        <>
+                          <span className="inline-flex items-center px-4 py-2 rounded-full text-base font-medium bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                            <i className="fas fa-tasks mr-3 text-lg"></i>
+                            Product Manager
+                          </span>
+                          <span className="inline-flex items-center px-4 py-2 rounded-full text-base font-medium bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">
+                            <i className="fas fa-crown mr-3 text-lg"></i>
+                            Founder
+                          </span>
+                        </>
+                      )}
+
+                      {/* Additional Roles - Yousef has Founder */}
+                      {member.id === 2 && (
+                        <span className="inline-flex items-center px-4 py-2 rounded-full text-base font-medium bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">
+                          <i className="fas fa-crown mr-3 text-lg"></i>
+                          Founder
+                        </span>
+                      )}
                     </div>
                     <p className="text-lg text-gray-300 leading-relaxed">
                       {member.bio}

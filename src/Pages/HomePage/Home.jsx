@@ -483,19 +483,25 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {/* Rami Ahmed Card */}
                     <div className="p-8 rounded-2xl transition-all duration-300
-                                  bg-black/50 dark:bg-black/50 light:bg-gray-900/30
-                                  backdrop-blur-sm border border-gray-700/50 dark:border-gray-700/50 light:border-gray-600/50
-                                  hover:border-cyan-400/40 hover:shadow-2xl hover:shadow-cyan-500/20
-                                  hover:scale-[1.02] transform">
+              bg-black/50 dark:bg-black/50 light:bg-gray-900/30
+              backdrop-blur-sm border border-gray-700/50 dark:border-gray-700/50 light:border-gray-600/50
+              hover:border-cyan-400/40 hover:shadow-2xl hover:shadow-cyan-500/20
+              hover:scale-[1.02] transform">
                         <div className="flex items-start mb-6">
                             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mr-6 flex-shrink-0">
                                 <span className="text-2xl font-bold text-white">RA</span>
                             </div>
                             <div>
                                 <h1 className="text-2xl font-bold text-white dark:text-white light:text-white">Rami Ahmed</h1>
-                                <div className="flex items-center mt-2">
+                                <div className="flex flex-wrap items-center mt-2 gap-2">
                                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
-                                        <i className="fas fa-robot mr-2"></i> AI Engineer
+                                        <i className="fas fa-robot mr-2"></i>AI Engineer
+                                    </span>
+                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                                        <i className="fas fa-tasks mr-2"></i>Product Manager
+                                    </span>
+                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">
+                                        <i className="fas fa-crown mr-2"></i>Founder
                                     </span>
                                 </div>
                             </div>
@@ -508,7 +514,7 @@ export default function Home() {
                         <div className="mt-6 pt-6 border-t border-gray-700/50 dark:border-gray-700/50 light:border-gray-600/50">
                             <p className="text-sm font-medium text-gray-400 dark:text-gray-400 light:text-gray-400 mb-3">Expertise:</p>
                             <div className="flex flex-wrap gap-2">
-                                {["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "AI Integration"].map((skill, idx) => (
+                                {["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "AI Integration", "Product Strategy", "Roadmapping", "Agile Methodology", "User Research"].map((skill, idx) => (
                                     <span key={idx} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-800/50 text-gray-300 border border-gray-700/50">
                                         {skill}
                                     </span>
@@ -531,10 +537,10 @@ export default function Home() {
 
                     {/* Yousef Hatem Card */}
                     <div className="p-8 rounded-2xl transition-all duration-300
-                                  bg-black/50 dark:bg-black/50 light:bg-gray-900/30
-                                  backdrop-blur-sm border border-gray-700/50 dark:border-gray-700/50 light:border-gray-600/50
-                                  hover:border-blue-400/40 hover:shadow-2xl hover:shadow-blue-500/20
-                                  hover:scale-[1.02] transform">
+                          bg-black/50 dark:bg-black/50 light:bg-gray-900/30
+                          backdrop-blur-sm border border-gray-700/50 dark:border-gray-700/50 light:border-gray-600/50
+                          hover:border-blue-400/40 hover:shadow-2xl hover:shadow-blue-500/20
+                          hover:scale-[1.02] transform">
                         <div className="flex items-start mb-6">
                             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mr-6 flex-shrink-0">
                                 <span className="text-2xl font-bold text-white">YH</span>
@@ -542,8 +548,11 @@ export default function Home() {
                             <div>
                                 <h1 className="text-2xl font-bold text-white dark:text-white light:text-white">Yousef Hatem</h1>
                                 <div className="flex items-center mt-2">
-                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/20 text-blue-300 border border-blue-500/30">
-                                        <i className="fas fa-code mr-2"></i> Web Developer
+                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                                        <i className="fas fa-code mr-2"></i>Web Developer
+                                    </span>
+                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-300 border border-yellow-500/30 ml-2">
+                                        <i className="fas fa-crown mr-2"></i>Founder
                                     </span>
                                 </div>
                             </div>
@@ -571,15 +580,14 @@ export default function Home() {
                             <a href="https://github.com/YousefHatem4" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
                                 <i className="fab fa-github text-xl"></i>
                             </a>
-
                         </div>
                     </div>
                 </div>
 
                 {/* Team Expansion Note */}
                 <div className="max-w-3xl mx-auto mt-12 p-6 rounded-2xl 
-                              bg-gradient-to-r from-gray-800/40 to-gray-900/40 dark:from-gray-800/40 dark:to-gray-900/40 light:from-gray-800/20 light:to-gray-900/20
-                              border border-gray-700/50 dark:border-gray-700/50 light:border-gray-600/50">
+                      bg-gradient-to-r from-gray-800/40 to-gray-900/40 dark:from-gray-800/40 dark:to-gray-900/40 light:from-gray-800/20 light:to-gray-900/20
+                      border border-gray-700/50 dark:border-gray-700/50 light:border-gray-600/50">
                     <div className="flex items-center">
                         <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center mr-4">
                             <i className="fas fa-users text-gray-400 text-xl"></i>
@@ -598,9 +606,9 @@ export default function Home() {
                     <Link
                         to="/team"
                         className="inline-flex items-center gap-3 px-8 py-4 rounded-lg
-                                 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700
-                                 text-white font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105
-                                 transition-all duration-300"
+                         bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700
+                         text-white font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105
+                         transition-all duration-300"
                     >
                         <i className="fas fa-users"></i>
                         Meet Full Team
