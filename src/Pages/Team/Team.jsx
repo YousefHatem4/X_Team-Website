@@ -12,9 +12,8 @@ export default function Team() {
       bio: "Specializes in developing cutting-edge AI solutions with expertise in machine learning, deep learning, and natural language processing. Leads our AI initiatives and ensures our solutions are at the forefront of technology.",
       expertise: ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "AI Integration", "Neural Networks", "Data Science", "Product Strategy", "Roadmapping", "Agile Methodology"],
       social: {
-        linkedin: "#",
-        github: "#",
-        twitter: "#"
+        linkedin: "https://www.linkedin.com/in/ramymegahed",
+        github: "https://github.com/ramymegahed",
       }
     },
     {
@@ -28,7 +27,6 @@ export default function Team() {
       social: {
         linkedin: "https://www.linkedin.com/in/yousef-hatem-16530024b/",
         github: "https://github.com/YousefHatem4",
-        twitter: "#"
       }
     }
   ];
@@ -193,18 +191,7 @@ export default function Team() {
                       <i className={`fab fa-github text-2xl ${member.social.github !== "#" ? "text-gray-300 group-hover:text-white" : "text-gray-500"}`}></i>
                     </a>
 
-                    {/* Twitter - Optional */}
-                    {member.social.twitter !== "#" && (
-                      <a
-                        href={member.social.twitter}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-center justify-center w-14 h-14 rounded-xl bg-gray-800/50 border border-gray-700/50 hover:bg-cyan-500/20 hover:border-cyan-400/40 hover:scale-110 transition-all duration-300"
-                        title="Twitter Profile"
-                      >
-                        <i className="fab fa-twitter text-2xl text-cyan-400 group-hover:text-cyan-300"></i>
-                      </a>
-                    )}
+                 
                   </div>
                 </div>
               </div>
